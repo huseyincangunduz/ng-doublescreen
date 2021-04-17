@@ -1,7 +1,8 @@
-<div #shownOnSecondScreen>
-
-</div>
+<ng-template #shownOnSecondScreen>
+    {{text}}
+</ng-template>
 
 <div>
     <input type="text" [(ngModel)]="text">
+    <button (click)="displayTextAnotherScreen()">display new screen</button>
 </div>
